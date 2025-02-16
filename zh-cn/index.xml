@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>冰冻水的记忆</title>
+    <link>https://c-s-ctrl.github.io/zh-cn/</link>
+    <description>Recent content on 冰冻水的记忆</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://c-s-ctrl.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网站的搭建与 Coder 模板的本地化</title>
+      <link>https://c-s-ctrl.github.io/zh-cn/posts/bulid/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://c-s-ctrl.github.io/zh-cn/posts/bulid/</guid>
+      <description>&lt;h1 id=&#34;基本配置&#34;&gt;&#xD;&#xA;  基本配置&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#%e5%9f%ba%e6%9c%ac%e9%85%8d%e7%bd%ae&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;链接到标题&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;链接到标题&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h2 id=&#34;配置环境&#34;&gt;&#xD;&#xA;  配置环境&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#%e9%85%8d%e7%bd%ae%e7%8e%af%e5%a2%83&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;链接到标题&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;链接到标题&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;首先，我们需要下载 Hugo 并配置相关环境变量。具体步骤可以参考&lt;a href=&#34;https://zhuanlan.zhihu.com/p/440175312&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;这篇文章&lt;/a&gt;。完成后，确保在终端中运行 &lt;code&gt;hugo version&lt;/code&gt; 时没有报错。&lt;/p&gt;&#xA;&lt;h3 id=&#34;配置主题&#34;&gt;&#xD;&#xA;  配置主题&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#%e9%85%8d%e7%bd%ae%e4%b8%bb%e9%a2%98&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;链接到标题&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;链接到标题&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;接着按照提示创建自己的文件夹，我选择了 &lt;a href=&#34;https://github.com/luizdepra/hugo-coder&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo-coder&lt;/a&gt; 主题。不过在抓取仓库时遇到了一些问题。运行仓库抓取命令时出现报错，询问 AI 后得知需要先初始化本地仓库。为此，我们需要运行：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接着，运行以下命令来抓取主题仓库：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;运行 &lt;code&gt;git submodule add&lt;/code&gt; 命令后，Hugo 会将 &lt;code&gt;hugo-coder&lt;/code&gt; 主题添加到你的项目中的 &lt;code&gt;themes&lt;/code&gt; 文件夹下。&lt;/p&gt;&#xA;&lt;h1 id=&#34;个性化模版网站&#34;&gt;&#xD;&#xA;  个性化模版网站&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#%e4%b8%aa%e6%80%a7%e5%8c%96%e6%a8%a1%e7%89%88%e7%bd%91%e7%ab%99&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;链接到标题&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;链接到标题&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;我昨天卡在了这里，一直没有看到网站的效果。今天（2025.2.15）发现原来是我的 Hugo 版本太低，并且不是 Extended 版本。重新安装并升级版本后，我成功看到了自己的网站。Coder 这个模板真的很漂亮，我决定进一步摸索一下如何将它个性化。&lt;/p&gt;&#xA;&lt;h2 id=&#34;更改细节&#34;&gt;&#xD;&#xA;  更改细节&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#%e6%9b%b4%e6%94%b9%e7%bb%86%e8%8a%82&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;链接到标题&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;链接到标题&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;首先，我将 &lt;code&gt;exampleSite&lt;/code&gt; 目录中的文件直接复制到网站根目录，覆盖掉现有文件。通过这些步骤，我们可以顺利地完成 Hugo 网站的搭建和 Coder 模板的本地化设置。接下来，我会继续个性化设计，调整网站内容以符合自己的需求。&lt;/p&gt;&#xA;&lt;h3 id=&#34;更改语言&#34;&gt;&#xD;&#xA;  更改语言&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#%e6%9b%b4%e6%94%b9%e8%af%ad%e8%a8%80&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;链接到标题&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;链接到标题&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;大部分更改都集中在 &lt;code&gt;hugo.toml&lt;/code&gt; 文件中，因此建议在开始之前安装 Even Better TOML 插件，这样会更方便查看和修改。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>https://c-s-ctrl.github.io/zh-cn/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://c-s-ctrl.github.io/zh-cn/about/</guid>
+      <description>&lt;p&gt;用 Go 编写的 Hugo 是一个开源的静态网站生成器，遵循 &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache 许可证 2.0&lt;/a&gt;。Hugo 支持 TOML、YAML 和 JSON 数据文件类型，Markdown 和 HTML 内容文件，并使用短代码来添加丰富的内容。其他显著的特点包括分类法、多语言模式、图像处理、自定义输出格式、HTML/CSS/JS 压缩以及对 Sass SCSS 工作流的支持。&lt;/p&gt;&#xA;&lt;p&gt;Hugo 使用了多种开源项目，包括：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo 非常适合用于博客、企业网站、创意作品集、在线杂志、单页面应用程序，甚至是包含成千上万个页面的网站。&lt;/p&gt;&#xA;&lt;p&gt;Hugo 适合那些希望手动编写自己网站的人，无需担心设置复杂的运行时、依赖项和数据库。&lt;/p&gt;&#xA;&lt;p&gt;使用 Hugo 构建的网站非常快速、安全，并且可以部署到任何地方，包括 AWS、GitHub Pages、Heroku、Netlify 和其他任何主机提供商。&lt;/p&gt;&#xA;&lt;p&gt;了解更多信息并在 &lt;a href=&#34;https://github.com/gohugoio&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; 上贡献代码。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>联系我</title>
+      <link>https://c-s-ctrl.github.io/zh-cn/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://c-s-ctrl.github.io/zh-cn/contact/</guid>
+      <description>&lt;p&gt;请联系我：cuidsh@mail2.sysu.edu.cn&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>项目</title>
+      <link>https://c-s-ctrl.github.io/zh-cn/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://c-s-ctrl.github.io/zh-cn/projects/</guid>
+      <description>&lt;p&gt;这里什么都没有&amp;hellip; 请继续前行！&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
